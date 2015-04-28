@@ -1,0 +1,20 @@
+//---------------------------------------------------------------------------
+
+
+#pragma hdrstop
+
+#include "RozmiarGrafiki.h"
+
+//---------------------------------------------------------------------------
+RozmiarGrafiki::RozmiarGrafiki()
+{
+        SzerokoscX = 0;
+        WysokoscY = 0;
+}
+
+RozmiarGrafiki::RozmiarGrafiki(int szerokoscX, int wysokoscY)
+{
+        SzerokoscX = szerokoscX;
+        WysokoscY = wysokoscY;
+}
+#pragma package(smart_init)

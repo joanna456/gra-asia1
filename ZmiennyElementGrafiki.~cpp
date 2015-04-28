@@ -1,0 +1,28 @@
+//---------------------------------------------------------------------------
+
+
+#pragma hdrstop
+
+#include "ZmiennyElementGrafiki.h"
+#pragma package(smart_init)
+//---------------------------------------------------------------------------
+ZmiennyElementGrafiki();
+
+ZmiennyElementGrafiki::ZmiennyElementGrafiki(int id,
+                int szerokoscX, int wysokoscY,
+                int pozycjaX, int pozycjaY,
+                AnsiString sciezkaGrafikiOryginalnej,
+                AnsiString sciezkaGrafikiZmiennej
+{
+    Id = id;
+    Rozmiar = new RozmiarGrafiki(szerokoscX, wysokoscY);
+    Pozycja = new PozycjaGrafiki(pozycjaX, pozycjaY);
+    SciezkaGrafikiOryginalnej = sciezkaGrafikiOryginalnej;
+    SciezkaGrafikiZmiennej = sciezkaGrafikiZmiennej;
+}
+
+ZmiennyElementGrafiki::~ZmiennyElementGrafiki()
+{
+
+}
+
